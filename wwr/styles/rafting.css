@@ -117,9 +117,11 @@ section p {
 map {
     width: 100%;
 }
-.contact img{
+.contact .happy{
     width: 600px;
-    height: auto;
+    height: 562.23px;
+    background-image: url("../images/employees.jpeg");
+    background-size: cover;
 }
 
 .contact {
@@ -175,16 +177,24 @@ footer nav {
 }
 
 form {
-    display: block;
-}
-
-.twice-two {
     display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 30px;
-    margin-bottom: 10px;
+    width: 650px;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    border: 1px solid #eee;
+    padding: 1rem;
 }
 
+input,  textarea {
+    padding: .5rem;
+    font-size: 1.1rem;
+    font-family: "Lato";
+}
 .message {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -200,13 +210,19 @@ form {
     justify-content: center;
 }
 
-input[type="submit"] {
+.button {
     margin-top: 1rem;
     background-color: var(--accent2-color);
     border: none;
     color: #fff;
-    padding: 0.75rem;
+    padding: 0.57rem;
     font-size: 1.2rem;
+    width: 10rem;
+    cursor: pointer;
+}
+.radio {
+    display: flex; 
+    justify-content: space-between
 }
 
 .informations {
@@ -278,7 +294,7 @@ iframe {
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #eee;
+    background-color: #fff;
 }
 
 
@@ -310,6 +326,6 @@ iframe {
     transform: rotate(45deg);
 }
 
-.newsletter {
-    margin-top: 2rem;
-}
+/* .newsletter {
+    margin-top: 1rem;
+} */
