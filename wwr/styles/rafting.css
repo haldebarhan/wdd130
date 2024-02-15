@@ -117,11 +117,9 @@ section p {
 map {
     width: 100%;
 }
-.contact .happy{
+.contact .happy img{
     width: 600px;
     height: 562.23px;
-    background-image: url("../images/employees.jpeg");
-    background-size: cover;
 }
 
 .contact {
