@@ -324,6 +324,196 @@ iframe {
     transform: rotate(45deg);
 }
 
-/* .newsletter {
-    margin-top: 1rem;
-} */
+.trips-main .trips-banner {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .5)), url("../images/banner2.jpeg");
+    background-size: cover;
+    text-align: center;
+
+}
+
+.trips-banner h2 {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    font-family: 'Lato';
+    font-weight: 600;
+}
+.trips-section {
+    align-items: center;
+    text-align: center;
+}
+
+.trips-section p {
+    margin-bottom: 3rem;
+}
+
+.trips-section .booking {
+    border: 3px solid var(--secondary-color);
+    padding: 10px 15px;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.trips-section .booking:hover {
+    background: var(--secondary-color);
+    border: 0px solid white;
+    color: white;
+}
+
+
+
+.trips-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+
+.trips-container .booking-card {
+    position: relative;
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex: 0 0 400px;
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: #0a4870;
+    transition: 0.3s;
+    background-color: #138d75;
+}
+.trips-container .booking-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 72, 112, 0);
+    transition: 0.3s;
+}
+.trips-container .booking-card .book-container {
+    height: 200px;
+}
+.trips-container .booking-card .book-container .content {
+    position: relative;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-200px);
+    transition: 0.3s;
+}
+.trips-container .booking-card .book-container .content .btn {
+    border: 3px solid white;
+    padding: 10px 15px;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.trips-container .booking-card .book-container .content .btn:hover {
+    background: white;
+    border: 0px solid white;
+    color: #0a4870;
+}
+.trips-container .booking-card .informations-container {
+    flex: 1 0 auto;
+    padding: 20px;
+    background: #f0f0f0;
+    transform: translateY(206px);
+    transition: 0.3s;
+}
+.trips-container .booking-card .informations-container .title {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.trips-container .booking-card .informations-container .title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 50px;
+    margin: auto;
+    background: #0a4870;
+}
+.trips-container .booking-card .informations-container .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.trips-container .booking-card .informations-container .price .icon {
+    margin-right: 10px;
+}
+.trips-container .booking-card .informations-container .more-information {
+    opacity: 0;
+    transition: 0.3s;
+}
+.trips-container .booking-card .informations-container .more-information .info-and-date-container {
+    display: flex;
+}
+.trips-container .booking-card .informations-container .more-information .info-and-date-container .box {
+    flex: 1 0;
+    padding: 15px;
+    margin-top: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.trips-container .booking-card .informations-container .more-information .info-and-date-container .box .icon {
+    margin-bottom: 5px;
+}
+.trips-container .booking-card .informations-container .more-information .info-and-date-container .box.info {
+    color: #ec992c;
+    margin-right: 10px;
+}
+.trips-container .booking-card .informations-container .more-information .disclaimer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #7d7d7d;
+}
+.trips-container .booking-card:hover::before {
+    background: rgba(10, 72, 112, 0.6);
+}
+.trips-container .booking-card:hover .book-container .content {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.trips-container .booking-card:hover .informations-container {
+    transform: translateY(0px);
+}
+.trips-container .booking-card:hover .informations-container .more-information {
+    opacity: 1;
+}
